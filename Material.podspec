@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-		s.dependency 'Motion', '~> 2.0.0'
+		s.dependency 'Motion', '2.0.0'
 	end
 
 	s.subspec "Button" do |component|
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-    component.dependency "Motion", "~> 2.0.0"
+    component.dependency "Motion", "2.0.0"
   end
 
 	s.subspec "TextField" do |component|
@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-    component.dependency "Motion", "~> 2.0.0"
+    component.dependency "Motion", "2.0.0"
   end
 end
