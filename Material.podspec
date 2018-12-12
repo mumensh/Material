@@ -27,6 +27,21 @@ Pod::Spec.new do |s|
 	s.subspec "Button" do |component|
     component.ios.deployment_target = '8.0'
 		component.source_files = "Sources/iOS/#{component.base_name}/*.swift", "Sources/iOS/Commons/*.swift"
+		component.resource_bundles = {
+			'com.cosmicmind.material.icons' => ['Sources/**/*.xcassets'],
+			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
+		}
+
+    component.dependency "Motion", "~> 1.4.3"
+  end
+
+	s.subspec "TextField" do |component|
+    component.ios.deployment_target = '8.0'
+		component.source_files = "Sources/iOS/#{component.base_name}/*.swift", "Sources/iOS/Commons/*.swift", "Sources/iOS/View/*.swift", "Sources/iOS/Layer/*.swift"
+		component.resource_bundles = {
+			'com.cosmicmind.material.icons' => ['Sources/**/*.xcassets'],
+			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
+		}
 
     component.dependency "Motion", "~> 1.4.3"
   end
