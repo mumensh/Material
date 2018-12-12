@@ -26,7 +26,8 @@ Pod::Spec.new do |s|
 
 	s.subspec "Button" do |component|
     component.ios.deployment_target = '8.0'
-    component.source_files = "Sources/iOS/#{component.base_name}.swift", "components/#{component.base_name}/src/private/*.{h,m}"
+		component.public_header_files = "Sources/iOS/Commons/*.swift"
+		component.source_files = "Sources/iOS/#{component.base_name}/*.swift"
 
     component.dependency "Motion", "~> 1.4.3"
   end
