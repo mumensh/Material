@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-		s.dependency "Motion", :git => 'https://github.com/CosmicMind/Motion.git', :commit => "7ef51741d640a4b0776bbac75a3572fd38b22b93"
+		s.dependency "Motion", "1.4.3"
 	end
 
 	s.subspec "Button" do |component|
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-    component.dependency "Motion", :git => 'https://github.com/CosmicMind/Motion.git', :commit => "7ef51741d640a4b0776bbac75a3572fd38b22b93"
+    component.dependency "Motion", "1.4.3"
   end
 
 	s.subspec "TextField" do |component|
@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-    component.dependency "Motion", :git => 'https://github.com/CosmicMind/Motion.git', :commit => "7ef51741d640a4b0776bbac75a3572fd38b22b93"
+    component.dependency "Motion", "1.4.3"
   end
 end
